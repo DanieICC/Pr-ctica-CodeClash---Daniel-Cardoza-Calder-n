@@ -5,7 +5,7 @@ const desafios = [
         categoria: 'Algoritmos',
         dificultad: 'Fácil',
         puntos: 50,
-        descripcion: 'Solicita un número al usuario y muestra en pantalla si es par o impar.',
+        descripcion: 'Solicita un número al usuario e imprime en un mensaje si es par o impar.',
         etiquetas: ['Python', 'Condicionales', 'Input'], 
         imagen: 'algoritmos.png',
         resuelto: false, 
