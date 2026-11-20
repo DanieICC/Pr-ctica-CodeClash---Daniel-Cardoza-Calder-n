@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="pantallaCarga">
+        <div class="spinner"></div>
+        <p class="textoCarga">Cargando...</p>
+    </div>
+
+    <header>
+        <p>CodeClash Arena</p>
+        <div class="stats">
+            <div>
+                <p>Resueltos</p>
+                <p id="numResueltos">0 / 8</p>
+            </div>
+            <div>
+                <p>Puntos</p>
+                <p id="numPuntos">0</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h1>Desafíos</h1>
+
+        <div class="divBarras">
+            <nav id="navCategoria" class="filtros">
+                <button class="activo" onclick="filtrarCategoria('Todos', this)">Todos</button>
+                <button onclick="filtrarCategoria('Algoritmos', this)">Algoritmos</button>
+                <button onclick="filtrarCategoria('Bases de Datos', this)">Bases de Datos</button>
+                <button onclick="filtrarCategoria('Desarrollo Web', this)">Desarrollo Web</button>
+                <button onclick="filtrarCategoria('Ciberseguridad', this)">Ciberseguridad</button>
+            </nav>
+            <nav id="navDificultad" class="filtros">
+                <button class="activo">Todas</button>
+                <button>Fácil</button>
+                <button>Medio</button>
+                <button>Difícil</button>
+            </nav>
+        </div>
+
+        <div class="desafios" id="contenedorDesafios"></div>
+    </main>
+
+    <nav id="navMovil">
+        <button class="activo" onclick="filtrarCategoria('Todos', this)">
+            <span class="iconoNav">▦</span>
+            <span>Todos</span>
+        </button>
+        <button onclick="filtrarCategoria('Algoritmos', this)">
+            <span class="iconoNav">{}</span>
+            <span>Algoritmos</span>
+        </button>
+        <button onclick="filtrarCategoria('Bases de Datos', this)">
+            <span class="iconoNav">▤</span>
+            <span>Datos</span>
+        </button>
+        <button onclick="filtrarCategoria('Desarrollo Web', this)">
+            <span class="iconoNav">HTML5</span>
+            <span>Web</span>
+        </button>
+        <button onclick="filtrarCategoria('Ciberseguridad', this)">
+            <span class="iconoNav">⚠</span>
+            <span>Seguridad</span>
+        </button>
+    </nav>
+
+    <script src="script.js"></script>
+</body>
+</html>
